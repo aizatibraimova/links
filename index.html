@@ -10,6 +10,9 @@
     body {
       padding-top: 40px;
       padding-bottom: 40px;
+      background-color: #FFE5E5;
+      display: flex;
+      justify-content: center;
     }
 
     .banner-image {
@@ -18,10 +21,62 @@
       object-fit: cover;
       border-radius: 128px;
     }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
+    .name {
+      color: #374259;
+      display: flex;
+      justify-content: center;
+    }
+
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .social-icons a {
+      color: #545B77;
+      text-decoration: none;
+    }
+
+    .link {
+      background-color: #AC87C5;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .link a {
+      color: #FFE5E5;
+      text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+    }
+
   </style>
 </head>
-  
-  <body>
+
+<body>
+  <div class="items">
     <div class="banner">
       <img src="/thumbnails/aizat_headshot.jpeg" alt="Aizat's headshot" class="banner-image">
     </div>
@@ -34,41 +89,36 @@
       <a href="https://github.com/aizatibraimova" target="_blank">
         GitHub
       </a>
-    </div>
 
-    <div class="social-icons">
       <a href="https://www.linkedin.com/in/aizatibraimova/" target="_blank">
         LinkedIn
       </a>
-    </div>
 
-    <div class="social-icons">
       <a href="https://www.instagram.com/aizatis/?hl=en" target="_blank">
         Instagram
       </a>
     </div>
 
     <div class="link">
-      <img src="/thumbnails/dpi.jpeg">
+      <img src="/thumbnails/dpi.jpeg" class="thumbnail">
 
-      <a target="_blank"
-        href="https://dpi.uillinois.edu/tech-talent-development/apprenticeship/">Full-Stack Developer Apprenticeship</a>
+      <a target="_blank" href="https://dpi.uillinois.edu/tech-talent-development/apprenticeship/">Full-Stack Developer
+        Apprenticeship</a>
     </div>
 
     <div class="link">
-      <img src="/thumbnails/microsoft.jpeg">
+      <img src="/thumbnails/microsoft.jpeg" class="thumbnail">
 
-      <a target="_blank"
-        href="https://leap.microsoft.com/en-US/">Microsoft Leap</a>
+      <a target="_blank" href="https://leap.microsoft.com/en-US/">Microsoft Leap</a>
     </div>
 
     <div class="link">
-      <img src="/thumbnails/linkedin.jpeg">
+      <img src="/thumbnails/linkedin.jpeg" class="thumbnail">
 
-      <a target="_blank"
-        href="https://careers.linkedin.com/pathways-programs/apprenticeships">LinkedIn Apprenticeship</a>
+      <a target="_blank" href="https://careers.linkedin.com/pathways-programs/apprenticeships">LinkedIn
+        Apprenticeship</a>
     </div>
-  </body>
-  
-  </html>
-  
+  </div>
+</body>
+
+</html>
